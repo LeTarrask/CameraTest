@@ -7,18 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		795754BF2A697A6D0046BA1B /* Data+FileCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795754BE2A697A6D0046BA1B /* Data+FileCompression.swift */; };
+		795754C52A697AC50046BA1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795754C42A697AC50046BA1B /* AppDelegate.swift */; };
+		795754CB2A697AE90046BA1B /* PhotoSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795754C72A697AE90046BA1B /* PhotoSet.swift */; };
+		795754CD2A697AE90046BA1B /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795754C92A697AE90046BA1B /* Folder.swift */; };
+		795754CF2A697B300046BA1B /* VM+ImageManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795754CE2A697B300046BA1B /* VM+ImageManipulation.swift */; };
+		795754D12A697BB60046BA1B /* NewPhotoSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795754D02A697BB60046BA1B /* NewPhotoSetView.swift */; };
+		795754D32A697BBD0046BA1B /* PhotoSetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795754D22A697BBD0046BA1B /* PhotoSetDetailView.swift */; };
+		7972ECE42A30969600BCECC3 /* PhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972ECDB2A30969600BCECC3 /* PhotoGallery.swift */; };
+		7972ECE52A30969600BCECC3 /* CustomCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972ECDD2A30969600BCECC3 /* CustomCameraController.swift */; };
+		7972ECE62A30969600BCECC3 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972ECDE2A30969600BCECC3 /* CameraView.swift */; };
+		7972ECE72A30969600BCECC3 /* CustomCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972ECDF2A30969600BCECC3 /* CustomCameraRepresentable.swift */; };
+		7972ECE82A30969600BCECC3 /* CaptureButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972ECE02A30969600BCECC3 /* CaptureButtonView.swift */; };
+		7972ECFA2A309A3400BCECC3 /* UIImage+Orientation-Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972ECF92A309A3400BCECC3 /* UIImage+Orientation-Fix.swift */; };
+		7972ECFC2A309A5B00BCECC3 /* View+ImageFromURL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972ECFB2A309A5B00BCECC3 /* View+ImageFromURL-Extension.swift */; };
+		7972ECFE2A309A7700BCECC3 /* View+DrawingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972ECFD2A309A7700BCECC3 /* View+DrawingExtensions.swift */; };
 		7988AC0F2A02B16A00367131 /* CameraTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7988AC0E2A02B16A00367131 /* CameraTestApp.swift */; };
-		7988AC112A02B16A00367131 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7988AC102A02B16A00367131 /* ContentView.swift */; };
 		7988AC132A02B16B00367131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7988AC122A02B16B00367131 /* Assets.xcassets */; };
 		7988AC162A02B16B00367131 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7988AC152A02B16B00367131 /* Preview Assets.xcassets */; };
+		79E68C722A3A0B4F000B2841 /* Enum+BracketAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E68C712A3A0B4F000B2841 /* Enum+BracketAmount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		795754BE2A697A6D0046BA1B /* Data+FileCompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+FileCompression.swift"; sourceTree = "<group>"; };
+		795754C42A697AC50046BA1B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		795754C72A697AE90046BA1B /* PhotoSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSet.swift; sourceTree = "<group>"; };
+		795754C92A697AE90046BA1B /* Folder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		795754CE2A697B300046BA1B /* VM+ImageManipulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VM+ImageManipulation.swift"; sourceTree = "<group>"; };
+		795754D02A697BB60046BA1B /* NewPhotoSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPhotoSetView.swift; sourceTree = "<group>"; };
+		795754D22A697BBD0046BA1B /* PhotoSetDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSetDetailView.swift; sourceTree = "<group>"; };
+		7972ECDB2A30969600BCECC3 /* PhotoGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGallery.swift; sourceTree = "<group>"; };
+		7972ECDD2A30969600BCECC3 /* CustomCameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCameraController.swift; sourceTree = "<group>"; };
+		7972ECDE2A30969600BCECC3 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		7972ECDF2A30969600BCECC3 /* CustomCameraRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCameraRepresentable.swift; sourceTree = "<group>"; };
+		7972ECE02A30969600BCECC3 /* CaptureButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureButtonView.swift; sourceTree = "<group>"; };
+		7972ECF92A309A3400BCECC3 /* UIImage+Orientation-Fix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Orientation-Fix.swift"; sourceTree = "<group>"; };
+		7972ECFB2A309A5B00BCECC3 /* View+ImageFromURL-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ImageFromURL-Extension.swift"; sourceTree = "<group>"; };
+		7972ECFD2A309A7700BCECC3 /* View+DrawingExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+DrawingExtensions.swift"; sourceTree = "<group>"; };
 		7988AC0B2A02B16A00367131 /* CameraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7988AC0E2A02B16A00367131 /* CameraTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTestApp.swift; sourceTree = "<group>"; };
-		7988AC102A02B16A00367131 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7988AC122A02B16B00367131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7988AC152A02B16B00367131 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79E68C712A3A0B4F000B2841 /* Enum+BracketAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+BracketAmount.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +62,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7972ECDA2A30969600BCECC3 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				7972ECDB2A30969600BCECC3 /* PhotoGallery.swift */,
+				795754D02A697BB60046BA1B /* NewPhotoSetView.swift */,
+				795754D22A697BBD0046BA1B /* PhotoSetDetailView.swift */,
+				7972ECDC2A30969600BCECC3 /* CameraViews */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		7972ECDC2A30969600BCECC3 /* CameraViews */ = {
+			isa = PBXGroup;
+			children = (
+				7972ECDE2A30969600BCECC3 /* CameraView.swift */,
+				7972ECE02A30969600BCECC3 /* CaptureButtonView.swift */,
+				7972ECDF2A30969600BCECC3 /* CustomCameraRepresentable.swift */,
+				7972ECDD2A30969600BCECC3 /* CustomCameraController.swift */,
+			);
+			path = CameraViews;
+			sourceTree = "<group>";
+		};
+		7972ECEC2A3096B800BCECC3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				795754CE2A697B300046BA1B /* VM+ImageManipulation.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		7972ECEF2A3096DD00BCECC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				795754C92A697AE90046BA1B /* Folder.swift */,
+				795754C72A697AE90046BA1B /* PhotoSet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7972ECF82A309A2B00BCECC3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7972ECFD2A309A7700BCECC3 /* View+DrawingExtensions.swift */,
+				7972ECFB2A309A5B00BCECC3 /* View+ImageFromURL-Extension.swift */,
+				795754BE2A697A6D0046BA1B /* Data+FileCompression.swift */,
+				7972ECF92A309A3400BCECC3 /* UIImage+Orientation-Fix.swift */,
+				79E68C712A3A0B4F000B2841 /* Enum+BracketAmount.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		7988AC022A02B16A00367131 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				7988AC0E2A02B16A00367131 /* CameraTestApp.swift */,
-				7988AC102A02B16A00367131 /* ContentView.swift */,
+				795754C42A697AC50046BA1B /* AppDelegate.swift */,
+				7972ECDA2A30969600BCECC3 /* Gallery */,
+				7972ECEC2A3096B800BCECC3 /* View Model */,
+				7972ECEF2A3096DD00BCECC3 /* Models */,
+				7972ECF82A309A2B00BCECC3 /* Helpers */,
 				7988AC122A02B16B00367131 /* Assets.xcassets */,
 				7988AC142A02B16B00367131 /* Preview Content */,
 			);
@@ -137,8 +222,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7988AC112A02B16A00367131 /* ContentView.swift in Sources */,
+				795754D12A697BB60046BA1B /* NewPhotoSetView.swift in Sources */,
+				7972ECFA2A309A3400BCECC3 /* UIImage+Orientation-Fix.swift in Sources */,
 				7988AC0F2A02B16A00367131 /* CameraTestApp.swift in Sources */,
+				795754CB2A697AE90046BA1B /* PhotoSet.swift in Sources */,
+				7972ECE42A30969600BCECC3 /* PhotoGallery.swift in Sources */,
+				79E68C722A3A0B4F000B2841 /* Enum+BracketAmount.swift in Sources */,
+				795754C52A697AC50046BA1B /* AppDelegate.swift in Sources */,
+				795754BF2A697A6D0046BA1B /* Data+FileCompression.swift in Sources */,
+				7972ECE72A30969600BCECC3 /* CustomCameraRepresentable.swift in Sources */,
+				7972ECE52A30969600BCECC3 /* CustomCameraController.swift in Sources */,
+				7972ECE62A30969600BCECC3 /* CameraView.swift in Sources */,
+				7972ECFE2A309A7700BCECC3 /* View+DrawingExtensions.swift in Sources */,
+				7972ECFC2A309A5B00BCECC3 /* View+ImageFromURL-Extension.swift in Sources */,
+				795754CF2A697B300046BA1B /* VM+ImageManipulation.swift in Sources */,
+				7972ECE82A30969600BCECC3 /* CaptureButtonView.swift in Sources */,
+				795754CD2A697AE90046BA1B /* Folder.swift in Sources */,
+				795754D32A697BBD0046BA1B /* PhotoSetDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +370,12 @@
 				DEVELOPMENT_TEAM = L2BC5TCSR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera use.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +383,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarrask.CameraTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,11 +403,12 @@
 				DEVELOPMENT_TEAM = L2BC5TCSR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera use.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +416,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarrask.CameraTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
