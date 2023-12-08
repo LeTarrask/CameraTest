@@ -67,7 +67,7 @@ class CustomCameraController: UIViewController {
                                                                                 [AVVideoCodecKey:
                                                                                     AVVideoCodecType.hevc])],
                                                        completionHandler: nil)
-            photoOutput?.isHighResolutionCaptureEnabled = true
+//            photoOutput?.isHighResolutionCaptureEnabled = true
 
             // TESTING: Setting the Capture Prioritization
             photoOutput?.maxPhotoQualityPrioritization = .quality
@@ -146,7 +146,7 @@ class CustomCameraController: UIViewController {
         let photoSettings = AVCapturePhotoBracketSettings(rawPixelFormatType: kCVPixelFormatType_14Bayer_RGGB,
                                                           processedFormat: nil, bracketedSettings: exposureSettings)
 
-        photoSettings.isHighResolutionPhotoEnabled = true
+//        photoSettings.isHighResolutionPhotoEnabled = true
 
         // Disable flash, just in case
         photoSettings.flashMode = .off
