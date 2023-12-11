@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		793D915A2B239F9C00643D8A /* Aespa in Frameworks */ = {isa = PBXBuildFile; productRef = 793D91592B239F9C00643D8A /* Aespa */; };
+		793D915F2B23A3F600643D8A /* VideoContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D915B2B23A3F500643D8A /* VideoContentViewModel.swift */; };
+		793D91602B23A3F600643D8A /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D915C2B23A3F600643D8A /* GalleryView.swift */; };
+		793D91612B23A3F600643D8A /* VideoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D915D2B23A3F600643D8A /* VideoContentView.swift */; };
+		793D91622B23A3F600643D8A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D915E2B23A3F600643D8A /* SettingView.swift */; };
 		795754BF2A697A6D0046BA1B /* Data+FileCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795754BE2A697A6D0046BA1B /* Data+FileCompression.swift */; };
 		795754C52A697AC50046BA1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795754C42A697AC50046BA1B /* AppDelegate.swift */; };
 		795754CB2A697AE90046BA1B /* PhotoSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795754C72A697AE90046BA1B /* PhotoSet.swift */; };
@@ -29,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		793D915B2B23A3F500643D8A /* VideoContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoContentViewModel.swift; sourceTree = "<group>"; };
+		793D915C2B23A3F600643D8A /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		793D915D2B23A3F600643D8A /* VideoContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoContentView.swift; sourceTree = "<group>"; };
+		793D915E2B23A3F600643D8A /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		795754BE2A697A6D0046BA1B /* Data+FileCompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+FileCompression.swift"; sourceTree = "<group>"; };
 		795754C42A697AC50046BA1B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		795754C72A697AE90046BA1B /* PhotoSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSet.swift; sourceTree = "<group>"; };
@@ -56,12 +65,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793D915A2B239F9C00643D8A /* Aespa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		793D91572B239DA800643D8A /* Aespa */ = {
+			isa = PBXGroup;
+			children = (
+				793D915C2B23A3F600643D8A /* GalleryView.swift */,
+				793D915E2B23A3F600643D8A /* SettingView.swift */,
+				793D915D2B23A3F600643D8A /* VideoContentView.swift */,
+				793D915B2B23A3F500643D8A /* VideoContentViewModel.swift */,
+			);
+			path = Aespa;
+			sourceTree = "<group>";
+		};
 		7972ECDA2A30969600BCECC3 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +156,7 @@
 				7988AC0E2A02B16A00367131 /* CameraTestApp.swift */,
 				795754C42A697AC50046BA1B /* AppDelegate.swift */,
 				7972ECDA2A30969600BCECC3 /* Gallery */,
+				793D91572B239DA800643D8A /* Aespa */,
 				7972ECEC2A3096B800BCECC3 /* View Model */,
 				7972ECEF2A3096DD00BCECC3 /* Models */,
 				7972ECF82A309A2B00BCECC3 /* Helpers */,
@@ -168,6 +190,9 @@
 			dependencies = (
 			);
 			name = CameraTest;
+			packageProductDependencies = (
+				793D91592B239F9C00643D8A /* Aespa */,
+			);
 			productName = CameraTest;
 			productReference = 7988AC0B2A02B16A00367131 /* CameraTest.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +221,9 @@
 				Base,
 			);
 			mainGroup = 7988AC022A02B16A00367131;
+			packageReferences = (
+				793D91582B239F9C00643D8A /* XCLocalSwiftPackageReference "../../../open source projects/Aespa" */,
+			);
 			productRefGroup = 7988AC0C2A02B16A00367131 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -230,15 +258,19 @@
 				79E68C722A3A0B4F000B2841 /* Enum+BracketAmount.swift in Sources */,
 				795754C52A697AC50046BA1B /* AppDelegate.swift in Sources */,
 				795754BF2A697A6D0046BA1B /* Data+FileCompression.swift in Sources */,
+				793D915F2B23A3F600643D8A /* VideoContentViewModel.swift in Sources */,
 				7972ECE72A30969600BCECC3 /* CustomCameraRepresentable.swift in Sources */,
 				7972ECE52A30969600BCECC3 /* CustomCameraController.swift in Sources */,
 				7972ECE62A30969600BCECC3 /* CameraView.swift in Sources */,
+				793D91612B23A3F600643D8A /* VideoContentView.swift in Sources */,
 				7972ECFE2A309A7700BCECC3 /* View+DrawingExtensions.swift in Sources */,
 				7972ECFC2A309A5B00BCECC3 /* View+ImageFromURL-Extension.swift in Sources */,
 				795754CF2A697B300046BA1B /* VM+ImageManipulation.swift in Sources */,
 				7972ECE82A30969600BCECC3 /* CaptureButtonView.swift in Sources */,
 				795754CD2A697AE90046BA1B /* Folder.swift in Sources */,
 				795754D32A697BBD0046BA1B /* PhotoSetDetailView.swift in Sources */,
+				793D91602B23A3F600643D8A /* GalleryView.swift in Sources */,
+				793D91622B23A3F600643D8A /* SettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +403,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera use.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to store photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -404,6 +437,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera use.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to store photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +481,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		793D91582B239F9C00643D8A /* XCLocalSwiftPackageReference "../../../open source projects/Aespa" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../open source projects/Aespa";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		793D91592B239F9C00643D8A /* Aespa */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Aespa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7988AC032A02B16A00367131 /* Project object */;
 }
