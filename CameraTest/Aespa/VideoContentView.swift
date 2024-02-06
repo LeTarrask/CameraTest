@@ -5,7 +5,7 @@
 //  Created by 이영빈 on 2023/06/07.
 //
 
-import Aespa
+import AespaBracketedCamera
 import SwiftUI
 
 struct VideoContentView: View {
@@ -15,9 +15,9 @@ struct VideoContentView: View {
     @State var showSetting = false
     @State var showGallery = false
     
-    @State var captureMode: AssetType = .video
+    @State var captureMode: AssetType = .photo
 
-    @State var bracketCount: Int = 3 // TODO: this can be changed somewhere in the view
+    @State var bracketCount: Int = 7 // TODO: this can be changed somewhere in the view
 
     @ObservedObject private var viewModel = VideoContentViewModel()
     
@@ -29,7 +29,18 @@ struct VideoContentView: View {
                        minHeight: 0,
                        maxHeight: .infinity)
                 .edgesIgnoringSafeArea(.all)
-            
+
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(viewModel.images, id: \.self) { image in
+                        Image(uiImage: image)
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                }
+            }
+
             VStack {
                 ZStack(alignment: .center) {
                     // Mode change

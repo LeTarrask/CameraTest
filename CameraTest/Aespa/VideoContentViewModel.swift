@@ -8,8 +8,9 @@
 import Combine
 import SwiftUI
 import Foundation
+import AVFoundation
 
-import Aespa
+import AespaBracketedCamera
 
 class VideoContentViewModel: ObservableObject {
     let aespaSession: AespaSession
@@ -29,9 +30,11 @@ class VideoContentViewModel: ObservableObject {
     
     @Published var videoFiles: [VideoAsset] = []
     @Published var photoFiles: [PhotoAsset] = []
-    
+
+    @Published var images: [UIImage] = []
+
     init() {
-        let option = AespaOption(albumName: "Final Photo")
+        let option = AespaOption(albumName: "Camera Test")
         self.aespaSession = Aespa.session(with: option)
 
         // Common setting
@@ -48,8 +51,8 @@ class VideoContentViewModel: ObservableObject {
         
         // Photo-only setting
         aespaSession
-            .photo(.flashMode(mode: .on))
-            .photo(.redEyeReduction(enabled: true))
+            .photo(.flashMode(mode: .off))
+            .photo(.redEyeReduction(enabled: false))
 
         // Video-only setting
         aespaSession
@@ -114,9 +117,32 @@ extension VideoContentViewModel {
 extension VideoContentViewModel {
     func captureBracketedPhotos(count: Int) {
         Task {
-            let photos = try? await aespaSession.captureBracketedPhotos(count: count, autoVideoOrientationEnabled: true)
+            let photos = try? await self.aespaSession.captureBracketedPhotos(count: count, autoVideoOrientationEnabled: true)
 
-            print(photos as Any)
+            _ = photos.map { photos in
+                for capture in photos {
+                    if let image = convertToImage(photo: capture) {
+                        DispatchQueue.main.async {
+                            // TODO: here we're getting photis in the TIFF format on iPhone 13
+                            // We could check the metadata and save the file with the correct format here
+                            
+                            print(capture.resolvedSettings.rawPhotoDimensions)
+
+                            print("capture is raw \(capture.isRawPhoto)")
+                            print("pixel buffer \(String(describing: capture.pixelBuffer))")
+
+                            self.images.append(image)
+                        }
+                    }
+                }
+            }
         }
     }
+}
+
+func convertToImage(photo: AVCapturePhoto) -> UIImage? {
+    if let data = photo.fileDataRepresentation() {
+        return UIImage(data: data)?.fixOrientation()
+    }
+    return nil
 }

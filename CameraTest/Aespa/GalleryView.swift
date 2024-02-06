@@ -5,7 +5,7 @@
 //  Created by 이영빈 on 2023/06/12.
 //
 
-import Aespa
+import AespaBracketedCamera
 import SwiftUI
 
 struct GalleryView: View {
